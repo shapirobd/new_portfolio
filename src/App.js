@@ -1,5 +1,5 @@
 import "./App.css";
-import { About, MyWork, Contact } from "./components";
+import { Title, About, MyWork, Contact } from "./components";
 import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -21,6 +21,7 @@ function App() {
 	return (
 		<Grid container className={classes.app}>
 			<Grid item container xs={10}>
+				<Title />
 				<About />
 				<MyWork />
 				<Contact />
